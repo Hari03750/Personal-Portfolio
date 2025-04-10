@@ -1,17 +1,18 @@
-// Animate sections on scroll
-const faders = document.querySelectorAll('.fade-in');
-
-const appear = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.2
+// Scroll to top when logo or button clicked
+document.querySelector('.logo').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+document.getElementById('backToTop').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-faders.forEach(fader => {
-  appear.observe(fader);
+// Show/hide back-to-top button
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+
+// Toggle dark/light mode
+document.getElementById('mode-toggle').addEventListener('change', () => {
+  document.body.classList.toggle('light-mode');
 });
