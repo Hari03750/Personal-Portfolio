@@ -1,3 +1,9 @@
-// Scroll effect, navbar highlight, or animation hooks can go here later
-
-console.log("Portfolio loaded. Ready to glow! 💡");
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
