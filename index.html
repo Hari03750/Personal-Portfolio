@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hariharan | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="mode-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
   <nav>
-    <div class="logo">Hariharan</div>
+    <div class="logo" id="scrollTop">🚀 Hariharan</div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -19,59 +27,78 @@
     </ul>
   </nav>
 
-  <header id="home" class="hero section">
+  <header id="home" class="hero">
     <img src="profile.jpg" alt="Hariharan" class="profile-pic" />
     <h1>Hello, I'm <span>Hariharan</span></h1>
     <p>Aspiring Developer | Tech Enthusiast</p>
     <a href="hariharan full resume.pdf" download class="btn">Download Resume</a>
   </header>
 
-  <section id="about" class="section fade-in">
+  <section id="about">
     <h2>About Me</h2>
-    <p>I’m a final-year B.Tech student at SRM IST, with a passion for web development, IoT systems, and RF simulations. I love turning ideas into user-focused applications.</p>
+    <div class="about-content">
+      <p>
+        I'm a final-year B.Tech student at <strong>SRM Institute of Science and Technology</strong>, with a strong interest in web development, electronics, and innovative real-world projects.
+      </p>
+      <p>
+        My academic journey and project work have allowed me to explore areas such as IoT, embedded systems, and transistor-level simulation using Silvaco tools.
+      </p>
+      <p>
+        I enjoy building efficient, user-focused web applications that combine clean design with functional tech — like stopwatch tools, games, and smart systems.
+      </p>
+      <p>
+        I'm continuously learning and actively seeking opportunities to apply my skills in meaningful, impactful ways — whether in internships, collaboration, or creative freelance work.
+      </p>
+    </div>
   </section>
 
-  <section id="skills" class="section fade-in">
+  <section id="skills">
     <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>HTML / CSS / JavaScript</li>
-      <li>React (Basics)</li>
-      <li>Git & GitHub</li>
-      <li>Arduino & IoT</li>
-      <li>Silvaco TCAD</li>
+    <ul class="skill-list">
+      <li>Leadership</li>
+      <li>Decision Making</li>
+      <li>Critical Thinking</li>
+      <li>Teamwork</li>
+      <li>Problem Solving</li>
+      <li>Adaptability</li>
+      <li>Project Management</li>
     </ul>
   </section>
 
-  <section id="projects" class="section fade-in">
+  <section id="projects">
     <h2>Projects</h2>
     <div class="project-card">
       <h3>Smart Farming System</h3>
-      <p>IoT-based soil monitoring with automatic irrigation using Arduino.</p>
+      <p>IoT-based project using Arduino and moisture sensors for automatic irrigation.</p>
     </div>
     <div class="project-card">
       <h3>TFET Simulation</h3>
-      <p>DC and AC analysis of TFET transistors using Silvaco for mixed-signal use.</p>
+      <p>Analyzed TFET performance for analog/RF circuits using Silvaco TCAD tools.</p>
     </div>
     <div class="project-card">
       <h3>Stopwatch Web App</h3>
-      <p>Interactive stopwatch with lap timer and neon UI using HTML/CSS/JS.</p>
+      <p>A clean and responsive stopwatch using HTML, CSS and JavaScript with lap functionality.</p>
     </div>
     <div class="project-card">
       <h3>Tic Tac Toe</h3>
-      <p>Two-player game with animated interface and clean layout.</p>
+      <p>Interactive two-player game with win detection and neon-glow design.</p>
     </div>
   </section>
 
-  <section id="contact" class="section fade-in">
+  <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: hariharan.dev@gmail.com</p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/hariharan</a></p>
+    <p>Email: <a href="mailto:hariharan2004b@gmail.com">hariharan2004b@gmail.com</a></p>
+    <div class="social-icons">
+      <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Hariharan. All rights reserved.</p>
   </footer>
 
+  <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
   <script src="script.js"></script>
 </body>
 </html>
