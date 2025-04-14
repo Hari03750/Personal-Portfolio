@@ -49,6 +49,7 @@ nav a {
   text-decoration: none;
   color: var(--text-color);
 }
+
 .toggle-container {
   margin-left: 1rem;
 }
