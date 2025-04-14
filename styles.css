@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background: #111;
+  background: var(--bg-color);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
