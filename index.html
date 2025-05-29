@@ -3,76 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hariharan B | Aspiring Engineer</title>
+  <title>Hariharan B | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
+  <div class="container">
+    <header>
+      <img src="profile.jpg" alt="Profile Photo" class="profile-pic" />
       <h1>Hariharan B</h1>
+      <p class="subtitle">Tech Enthusiast & Aspiring Engineer</p>
+      <button id="toggle-mode">Toggle Dark Mode</button>
+      <br />
+      <a href="Hariharan_Resume.pdf" download class="resume-button">Download Resume</a>
+    </header>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        Driven and future-focused Electronics and Communication Engineering student with hands-on exposure
+        to VLSI design, SoC systems, and intelligent automation. Passionate about integrating Python,
+        AI, and embedded systems to solve real-world challenges.
+      </p>
+      <p>
+        <strong>Email:</strong> hariharan2004b@gmail.com <br />
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hariharan-b-5a8361334/" target="_blank">hariharan-b</a> <br />
+        <strong>Phone:</strong> +91 9025104896
+      </p>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><button id="theme-toggle">Toggle Theme</button></li>
+        <li>
+          <h3>Design and Investigation of TFET for Analog/RF Applications</h3>
+          <p>Simulated and analyzed TFET performance for low-power VLSI applications.</p>
+        </li>
+        <li>
+          <h3>Automatic Hydro Management</h3>
+          <p>Arduino-based irrigation system using soil moisture sensors.</p>
+        </li>
+        <li>
+          <h3>Light Tracking Robot</h3>
+          <p>Robot that detects and follows light sources using sensors.</p>
+        </li>
+        <li>
+          <h3><a href="https://hari03750.github.io/PRODIGY_WD_3/" target="_blank">Tic Tac Toe Game</a></h3>
+          <p>Simple and elegant JavaScript-based Tic Tac Toe with clean UI.</p>
+        </li>
+        <li>
+          <h3><a href="https://lnkd.in/edB8R9SH" target="_blank">Responsive Landing Page</a></h3>
+          <p>Responsive front-end webpage using HTML, CSS, and flexbox layout.</p>
+        </li>
+        <li>
+          <h3><a href="https://lnkd.in/e24s9FdW" target="_blank">SpotWatch</a></h3>
+          <p>Real-time movie information platform with user-friendly interface.</p>
+        </li>
       </ul>
-    </nav>
-  </header>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="profile.jpg" alt="Hariharan B" class="profile-pic" />
-    <p>Final-year B.Tech ECE student at SRM IST, passionate about tech, web development, and IoT. I love building smart, user-focused solutions and am always open to new opportunities.</p>
-  </section>
+    <footer>
+      <p>&copy; 2025 Hariharan B</p>
+    </footer>
+  </div>
 
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Final-year B.Tech ECE student at SRM IST, passionate about tech, web development, and IoT. I love building smart, user-focused solutions and am always open to new opportunities.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Web Development</li>
-      <li>Embedded Systems</li>
-      <li>IoT</li>
-      <li>Simulation</li>
-      <li>Problem Solving</li>
-      <li>UI/UX</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Stopwatch Web Application</h3>
-      <p>A simple and effective stopwatch application built using HTML, CSS, and JavaScript.</p>
-      <a href="https://hari03750.github.io/PRODIGY_WD_01/" target="_blank">View Project</a>
-    </div>
-    <div class="project">
-      <h3>Tic-Tac-Toe Game</h3>
-      <p>An interactive Tic-Tac-Toe game allowing play with friends or against the computer.</p>
-      <a href="https://hari03750.github.io/PRODIGY_WD_3/" target="_blank">View Project</a>
-    </div>
-    <div class="project">
-      <h3>Automatic Hydro Management System</h3>
-      <p>An IoT-based solution for efficient water resource management.</p>
-      <a href="https://hari03750.github.io/PRODIGY_WD_2/" target="_blank">View Project</a>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:hariharan2004b@gmail.com">hariharan2004b@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/hariharan-b-5a8361334/" target="_blank">Hariharan B</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Hariharan. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <script>
+    const toggleBtn = document.getElementById('toggle-mode');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
